@@ -4,7 +4,7 @@ from Crypto.Util.Padding import pad
 key = b'shshjsjsjsjjshhh'  # 16 Byte password
 cipher = AES.new(key, AES.MODE_CBC)
 
-plaintext = b"Microsoft is an idiot"
+plaintext = b"Linux is best"
 ciphertext = cipher.encrypt(pad(plaintext, AES.block_size))
 
 print(cipher.iv)
